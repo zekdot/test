@@ -1,0 +1,34 @@
+08:字符三角形
+
+总Time Limit:
+    1000ms
+Memory Limit:
+    65536kB
+
+Description
+
+    给定一个字符，用它构造一个底边长5个字符，高3个字符的等腰字符三角形。
+Input
+    输入只有一行， 包含一个字符。
+Output
+    该字符构成的等腰三角形，底边长5个字符，高3个字符。
+Sample Input
+
+    *
+
+Sample Output
+
+      *
+     ***
+    *****
+
+#include <stdio.h>
+int main()
+{
+	char le;
+	scanf("%c",&le);
+    printf("  %c\n",le);
+    printf(" %c%c%c\n",le,le,le);
+    printf("%c%c%c%c%c\n",le,le,le,le,le);
+    return 0;
+}

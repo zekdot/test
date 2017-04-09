@@ -1,0 +1,43 @@
+04:奇偶ASCII值判断
+
+总Time Limit:
+    1000ms
+Memory Limit:
+    65536kB
+
+Description
+
+    任意输入一个字符，判断其ASCII是否是奇数，若是，输出YES，否则，输出NO
+    例如，字符A的ASCII值是65，则输出YES，若输入字符B(ASCII值是66)，则输出NO
+Input
+    输入一个字符
+Output
+    如果其ASCII值为奇数，则输出YES，否则，输出NO
+Sample Input
+
+    A
+
+Sample Output
+
+    YES
+
+Source
+    元培-From Whf 
+
+#include <stdio.h>
+int main(){
+char a;
+scanf("%c",&a);
+int n=a;
+if(n==1){
+  printf("YES\n");
+}else{
+     if(n%2==0){
+     printf("NO\n");
+     }else{
+       printf("YES\n");
+     }
+
+}
+ return 0;
+}
